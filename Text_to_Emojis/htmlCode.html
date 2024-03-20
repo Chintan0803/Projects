@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text_to_Emojis</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div id="main">
+
+        <h1>
+            Text 
+            <span id="arrow">
+                &#8594;
+            </span>
+            Emojis
+        </h1>
+
+        <div id="endec-div">
+
+            <h3 id="enc-btn">
+                <i class="fa-solid fa-lock"></i> &nbsp;&nbsp;<span id="txt">Encrypt Text</span>
+            </h3>
+
+            <h3 id="dec-btn">
+                <i class="fa-solid fa-lock-open"></i> &nbsp;&nbsp;<span id="txt">Decrypt Emojis</span>
+            </h3>
+
+        </div>
+
+        <div id="encryption" style="display: none;">
+
+            <h5>1. Type a message</h5>
+
+            <textarea placeholder="Type Here" name="" id="textmsg" cols="30" rows="10"></textarea>
+
+            <h5>2. Set a password</h5>
+
+            <input placeholder="Enter Your Paasword..." type="password" name="" id="password">
+
+            <h5>3. Encrypt message</h5>
+
+            <button id="encrypt-btn"">
+                <span><i class="fa-solid fa-lock"></i>&nbsp;&nbsp;</span>Encrypt Text
+            </button>
+
+        </div>
+
+        <div id="decryption" style="display: none;">
+
+            <h5>1. Paste encrypted message</h5>
+
+            <textarea placeholder="Type Here" name="" id="emojimsg" cols="30" rows="10"></textarea>
+
+            <h5>2. Type a password</h5>
+
+            <input placeholder="Enter Your Paasword..." type="password" name="" id="finalpassword">
+            
+            <h5>3. Decrypt Emojis</h5>
+
+            <button id="decrypt-btn">
+                <span><i class="fa-solid fa-lock-open"></i>&nbsp;&nbsp;</span>Decrypt Emojis
+            </button>
+
+        </div>
+
+        <div id="result">
+            
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <textarea name="" id="result" cols="30" rows="10"></textarea> -->
+
+        <!-- <div>
+            <textarea name="" id="result" cols="30" rows="10" readonly=""></textarea>
+        </div> -->
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
